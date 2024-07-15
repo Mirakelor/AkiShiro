@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Fredericka the Great';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font1.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  
+  @font-face {
+    font-family: 'Fredericka the Great';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font2.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.avatar {
+    border-radius: 9999px;
+    display: block; 
+    margin: 0 auto; 
+    width: 300px; 
+    height: 300px;   
+}
+
+.hitokoto-container {  
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #fff;  
+    z-index: 1000; 
+}
+  
+#hitokoto {  
+    font-size: 14px; 
+    font-weight: 300; 
+    color: #aaa; 
+    margin: 0; 
+    display: inline-block;  
+}  
+  
+.author {  
+    font-size: 12px;  
+    color: #888;
+    margin-top: 5px; 
+}
+
+.container {  
+    position: relative;
+    height: 98vh;
+}  
+  
+.description {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    padding: 10px;
+}
+
+.para_1 {  
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 25px;
+}  
+
+.para_2 {
+    font-family: serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {  
+    .avatar {  
+        margin-left: auto;
+        margin-right: calc(26% - 150px); 
+        margin-top: calc(23% - 150px); 
+        float: right; 
+    }  
+
+    .container {  
+        position: relative;
+        height: 98vh;
+    }  
+  
+    .description {
+        width: 45%;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #333;
+        padding: 10px;
+    }
+
+    .para_1 {  
+        font-family: 'Fredericka the Great', sans-serif;
+        font-size: 25px;
+    }  
+
+    .para_2 {
+        font-family: serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+.top-social {      
+    position: fixed;
+    display: flex;
+    top: 18%;
+    left: 15%;
+    z-index: 100;
+}  
+  
+.top-social  a {  
+    display: block; 
+    text-decoration: none; 
+}  
+  
+
+.top-social img {  
+    width: 32px; 
+    height: 32px;  
+    display: block; 
+    margin: 0 20px; 
+}  
+ 
+.social-bili img, .social-qq img, .social-wangyiyun img, .social-github img {  
+    border: 2px solid #ff6678; 
+    border-radius: 50%;
+}  
+ 
+@media (max-width: 600px) {  
+    .top-social {  
+        flex-direction: column; 
+        align-items: flex-start; 
+        left: 5%;
+    }  
+  
+    .top-social img {  
+        margin: 5px 0; 
+    }  
+
+    .description {
+        top: 35%;
+    }
+}
